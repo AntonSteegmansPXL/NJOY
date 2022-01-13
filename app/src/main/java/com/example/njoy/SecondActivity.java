@@ -59,10 +59,10 @@ public class SecondActivity extends AppCompatActivity {
             Toast.makeText(context, textToShow, Toast.LENGTH_SHORT).show();
         }
 
-        switch (item.getItemId()) { //BACKEND FOR BACK BUTTON!
-            case android.R.id.home:
-                finish();
-                return true;
+        //BACKEND FOR BACK BUTTON!
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            return true;
         }
 
         return super.onOptionsItemSelected(item);
