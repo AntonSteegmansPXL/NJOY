@@ -59,8 +59,8 @@ public class SecondActivity extends AppCompatActivity {
             Toast.makeText(context, textToShow, Toast.LENGTH_SHORT).show();
         }
 
-        //BACKEND FOR BACK BUTTON!
-        if (item.getItemId() == android.R.id.home) {
+
+        if (item.getItemId() == android.R.id.home) {         //BACKEND FOR BACK BUTTON!
             finish();
             return true;
         }
