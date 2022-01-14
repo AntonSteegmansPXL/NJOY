@@ -19,4 +19,5 @@ public class Event {
     public String getEndDate() {
         return endDate;
     }
+
 }

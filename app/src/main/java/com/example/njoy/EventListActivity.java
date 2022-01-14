@@ -33,7 +33,8 @@ public class EventListActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);  //BACKEND FOR BACK BUTTON!
 
         recyclerView = findViewById(R.id.eventList);
-        database = FirebaseDatabase.getInstance().getReference("Events");
+        database = (DatabaseReference) FirebaseDatabase.getInstance("https://njoy-1c88b-default-rtdb.europe-west1.firebasedatabase.app").getReference();
+        //database = FirebaseDatabase.getInstance().getReference("Events");
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 

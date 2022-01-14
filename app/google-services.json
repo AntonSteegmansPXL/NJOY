@@ -1,33 +1,42 @@
 {
   "project_info": {
-    "project_number": "1035093891393",
-    "project_id": "njoy-7f588",
-    "storage_bucket": "njoy-7f588.appspot.com"
+    "project_number": "610571775778",
+    "firebase_url": "https://njoy-7f588-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "njoy-1c88b",
+    "storage_bucket": "njoy-1c88b.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1035093891393:android:b5f7d65706ba3b331f29c0",
+        "mobilesdk_app_id": "1:610571775778:android:cd49536f28006c6c06bf7b",
         "android_client_info": {
           "package_name": "com.example.njoy"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1035093891393-iopup1ucrvs2fucntdk82i69op0q60oq.apps.googleusercontent.com",
+          "client_id": "610571775778-1fe0q6ks9ta3jldplnvd364m25c71i7n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.njoy",
+            "certificate_hash": "eca37874472bb650b6ec15b50ace61f55cc09d61"
+          }
+        },
+        {
+          "client_id": "610571775778-be1sle98u9qvf62e853if6srnrn7snkl.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBD_esUebVI9Ux3KJrpDCNvzzPh_HIo6ZA"
+          "current_key": "AIzaSyDl3HmgkIuv8pYCIwhttdpJhiM7gOsatwo"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1035093891393-iopup1ucrvs2fucntdk82i69op0q60oq.apps.googleusercontent.com",
+              "client_id": "610571775778-be1sle98u9qvf62e853if6srnrn7snkl.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
