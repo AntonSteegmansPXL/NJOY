@@ -3,10 +3,12 @@ package com.example.njoy;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -14,12 +16,30 @@ public class SettingsActivity extends AppCompatActivity {
     boolean stateSwitch1, stateSwitch2, stateSwitch3, stateSwitch4;
     SharedPreferences preferences;
 
+    private Button openMapBtn, getListBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);  //BACKEND FOR BACK BUTTON!
+
+        openMapBtn = (Button) findViewById(R.id.openMapBtn);
+        openMapBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SettingsActivity.this, MapsActivity.class));
+            }
+        });
+
+        getListBtn = (Button) findViewById(R.id.getListBtn);
+        getListBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SettingsActivity.this, EventListActivity.class));
+            }
+        });
 
         preferences = getSharedPreferences("PREFS", 0);
         stateSwitch1 = preferences.getBoolean("switch1", false);
