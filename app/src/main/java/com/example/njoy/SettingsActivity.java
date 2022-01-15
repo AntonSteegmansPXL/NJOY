@@ -23,7 +23,7 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);  //BACKEND FOR BACK BUTTON!
+        getSupportActionBar().hide();
 
         openMapBtn = (Button) findViewById(R.id.openMapBtn);
         openMapBtn.setOnClickListener(new View.OnClickListener() {
@@ -101,16 +101,5 @@ public class SettingsActivity extends AppCompatActivity {
                 editor.apply();
             }
         });
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {  //BACKEND FOR BACK BUTTON!
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                finish();
-                return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 }
