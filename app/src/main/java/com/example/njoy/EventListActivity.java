@@ -36,7 +36,7 @@ public class EventListActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.eventList);
         database = (DatabaseReference) FirebaseDatabase.getInstance("https://njoy-1c88b-default-rtdb.europe-west1.firebasedatabase.app").getReference();
         //database = FirebaseDatabase.getInstance().getReference("Events");
-        recyclerView.setHasFixedSize(true);
+        //recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         list = new ArrayList<>();
