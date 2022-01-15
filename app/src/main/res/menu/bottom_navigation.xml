@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_eventlist"
+        android:icon="@drawable/ic_event_list_icon"
+        android:title=""/>
+
+    <item
+        android:id="@+id/nav_map"
+        android:icon="@drawable/ic_njoy_logo_placeholder"
+        android:title=""/>
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_settings_icon"
+        android:title=""/>
+</menu>

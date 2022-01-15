@@ -46,5 +46,4 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:20.0.2'
     implementation 'com.firebaseui:firebase-ui-database:6.2.1'
 
-
 }

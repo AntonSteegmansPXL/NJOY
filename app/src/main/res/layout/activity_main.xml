@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/lightBlack">
 
-    <LinearLayout
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"
+        app:itemIconSize="50dp"
+        android:background="@color/lightBlack"
+        app:itemIconTint="@color/lightGray"/>
+
+
+    <!--<LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:gravity="bottom"
@@ -43,5 +61,5 @@
             android:textColor="@color/lightBlack"
             android:text="@string/settings" />
 
-    </LinearLayout>
-</FrameLayout>
+    </LinearLayout>-->
+</RelativeLayout>
