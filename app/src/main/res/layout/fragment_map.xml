@@ -13,4 +13,32 @@
         android:id="@+id/google_map"
         android:name="com.google.android.gms.maps.SupportMapFragment"/>
 
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/get_your_location"
+            android:id="@+id/button_getYourLocation"/>
+
+        <TextView
+            android:id="@+id/tvLatitude"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tvLongitude"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:gravity="center"/>
+    </LinearLayout>-->
+
 </RelativeLayout>

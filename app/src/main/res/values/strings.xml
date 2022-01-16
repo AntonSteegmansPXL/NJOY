@@ -28,4 +28,5 @@
     <string name="location">Location:</string>
     <string name="placeholder">PLACEHOLDER</string>
     <string name="given_latitude">Latitude</string>
+    <string name="get_your_location">Get your location:</string>
 </resources>
