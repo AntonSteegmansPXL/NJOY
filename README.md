@@ -1,28 +1,24 @@
 ## Team
 
-Aantal studenten: 1 / 2
+Aantal studenten: 1
 
-Student 1: Voornaam NAAM
-
-Student 2: Voornaam NAAM OF /
+Student 1: Anton STEEGMANS
 
 ## Titel app
 
-TITEL
+NJOY
 
 ## Programmeertaal
 
-Kotlin / Java
+Java
 
 ## Github link en branch
 
 ### Link
 
-[Github link](https://github.com/android/android-test)
+[Github link](https://github.com/AntonSteegmansPXL/NJOY.git)
 
 ### Branch
-
-*Vul hier de naam van de branch is waar de laatste versie van de code terug te vinden is.*
 
 Branch: **master**
 
@@ -56,19 +52,16 @@ Welk(e) smart city thema('s) komt/komen aan bod in jullie project?
 
 ## Aantal schermen
 
-Het aantal schermen in onze app bedraagt **AANTAL**
+Het aantal schermen in onze app bedraagt **3**
 
 ### Lijst van schermen
 
 *Lijst hier de verschillende schermen van de app op:*
 
-(voorbeeld)
-
-* Login / registratie
-* Master
-* Detail
-* Settings
-* ...
+* Splash screen
+* EventList screen (fragment)
+* EventMap screen (fragment)
+* Settings screen (fragment)
 
 ## Lokale opslag / Shared Preferences
 
