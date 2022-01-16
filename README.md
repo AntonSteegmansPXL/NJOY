@@ -65,11 +65,11 @@ Het aantal schermen in onze app bedraagt **3**
 
 ### Extra 1
 
-EXTRA 1
+Splash screen
 
 ### Beschrijving extra 1
 
-Lorem ipsum
+Toevoeging van een splash screen, dat eerst het logo van de app toont en na 3 seconden overschakelt naar de MainActivity met de BottomNavigationView, 
 
 ### Extra 2 / Extra 3 / ...
 
