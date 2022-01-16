@@ -26,23 +26,13 @@ Branch: **master**
 
 Welk(e) smart city thema('s) komt/komen aan bod in jullie project?
 
-*Lijst deze hieronder op.*
-
-*Geef ook expliciet aan als er geen smart city thema aan bod komt!*
-
-*Enkele voorbeeldthema's:*
-
-* Mobiliteit (parkeren, carpoolen, ...)
-* Milieu (luchtkwaliteit, afval, ...)
-* Communicatie tussen overheid en burger (meldingsapp, evenementen, ...)
 * Communicatie tussen burgers onderling (samen sporten, boodschappen doen voor elkaar, materiaal uitlenen, ...)
-* Lokale handel (restaurants, winkels, ...)
-* Corona-gerelateerd
-* Andere: ANDERE
 
 ## Korte beschrijving
 
 *Beschrijf hier in enkele zinnen wie de doelgroep van je applicatie is en welke functionaliteiten de app biedt.*
+
+Het doel van de app is om het zoeken en vinden van evenement in de buurt (of elders) te vergemakkelijken. De doelgroep is dus mensen die op zoek zijn naar evenementen in de buurt (of elders)
 
 ## Minimale eisen
 
@@ -55,8 +45,6 @@ Welk(e) smart city thema('s) komt/komen aan bod in jullie project?
 Het aantal schermen in onze app bedraagt **3**
 
 ### Lijst van schermen
-
-*Lijst hier de verschillende schermen van de app op:*
 
 * Splash screen
 * EventList screen (fragment)
