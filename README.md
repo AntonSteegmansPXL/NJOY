@@ -26,7 +26,7 @@ Branch: **master**
 
 Welk(e) smart city thema('s) komt/komen aan bod in jullie project?
 
-* Communicatie tussen burgers onderling (samen sporten, boodschappen doen voor elkaar, materiaal uitlenen, ...)
+* Communicatie tussen burgers en organisatoren cultuursector
 
 ## Korte beschrijving
 
