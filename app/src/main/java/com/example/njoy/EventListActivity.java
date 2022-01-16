@@ -1,15 +1,11 @@
 package com.example.njoy;
 
-import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.os.Bundle;
+import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -22,38 +18,36 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeFragment extends Fragment {
+public class EventListActivity extends AppCompatActivity {
 
-    View v;
-    RecyclerView recyclerView;
-    private static final String TAG = "HomeFragment";
-    RecyclerAdapter recyclerAdapter;
+    private RecyclerView mRecyclerView;
+    private List<Event> viewItems = new ArrayList<>();
 
-    List<Event> eList;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager layoutManager;
 
-    public HomeFragment() {
-
-    }
-
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.fragment_home, container, false);
-        recyclerView = v.findViewById(R.id.my_recycler_view);
-
-        recyclerAdapter = new RecyclerAdapter(getContext(), eList);
-        recyclerView.setAdapter(recyclerAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-
-
-        return v;
-    }
+    private static final String TAG = "EventListActivity";
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_event_list);
 
-        eList = new ArrayList<>();
+        mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
+
+
+        // use this setting to improve performance if you know that changes
+        // in content do not change the layout size of the RecyclerView
+        mRecyclerView.setHasFixedSize(true);
+
+        // use a linear layout manager
+        layoutManager = new LinearLayoutManager(this);
+        mRecyclerView.setLayoutManager(layoutManager);
+
+        // specify an adapter (see also next example)
+        mAdapter = new RecyclerAdapter(this, viewItems);
+        mRecyclerView.setAdapter(mAdapter);
+
         addItemsFromJSON();
     }
 
@@ -76,7 +70,7 @@ public class HomeFragment extends Fragment {
 
 
                 Event event = new Event(name, city, startDate, endDate, longitude, latitude);
-                eList.add(event);
+                viewItems.add(event);
             }
 
         } catch (JSONException | IOException e) {

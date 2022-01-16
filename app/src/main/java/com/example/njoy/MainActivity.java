@@ -3,6 +3,7 @@ package com.example.njoy;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Context;
 import android.content.Intent;
@@ -19,8 +20,13 @@ import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.util.Map;
+
 public class MainActivity extends AppCompatActivity {
 
+    private Button showeventlistbutton;
+    private BottomNavigationView bottomNavigationView;
+    private FrameLayout frameLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +34,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         getSupportActionBar().hide();
+
+        showeventlistbutton = findViewById(R.id.showeventlistbutton);
+        showeventlistbutton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, EventListActivity.class));
+            }
+        });
+
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
+        frameLayout = findViewById(R.id.fragment_container);
+        setFragment(new HomeFragment());
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
@@ -37,21 +54,26 @@ public class MainActivity extends AppCompatActivity {
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                    Fragment selectedFragment = null;
-
                     switch (item.getItemId()) {
                         case R.id.nav_eventlist:
-                            selectedFragment = new HomeFragment();
+                            setFragment(new HomeFragment());
                             break;
                         case R.id.nav_map:
-                            selectedFragment = new MapFragment();
+                            setFragment(new MapFragment());
                             break;
                         case R.id.nav_settings:
-                            selectedFragment = new SettingsFragment();
+                            setFragment(new SettingsFragment());
                             break;
                     }
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
                     return true;
                 }
+
+
             };
+
+    private void setFragment(Fragment fragment) {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_container, fragment);
+        fragmentTransaction.commit();
+    }
 }

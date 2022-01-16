@@ -13,6 +13,12 @@
         android:layout_height="match_parent"
         android:layout_above="@id/bottom_navigation"/>
 
+    <Button
+        android:id="@+id/showeventlistbutton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="SHOWLIST"/>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
@@ -23,43 +29,4 @@
         android:background="@color/lightBlack"
         app:itemIconTint="@color/lightGray"/>
 
-
-    <!--<LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:gravity="bottom"
-        android:background="@color/lightBlack">
-
-        <Button
-            android:id="@+id/getListBtn"
-            android:layout_width="125dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="10dp"
-            android:layout_height="100dp"
-            android:backgroundTint="@color/lightGray"
-            android:textColor="@color/lightBlack"
-            android:text="@string/get_list"/>
-
-        <Button
-            android:id="@+id/openMapBtn"
-            android:layout_width="125dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="10dp"
-            android:layout_height="100dp"
-            android:text="@string/openmaptext"
-            android:textColor="@color/lightBlack"
-            android:backgroundTint="@color/yellow"
-            />
-
-        <Button
-            android:id="@+id/settingsBtn"
-            android:layout_width="125dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="10dp"
-            android:backgroundTint="@color/lightGray"
-            android:textColor="@color/lightBlack"
-            android:text="@string/settings" />
-
-    </LinearLayout>-->
 </RelativeLayout>
