@@ -37,6 +37,14 @@
         <entry key="..\:/Users/Anton/AndroidStudioProjects/NJOY2/app/src/main/res/layout/person.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/Anton/AndroidStudioProjects/NJOY2/app/src/main/res/menu/bottom_navigation.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/Anton/AndroidStudioProjects/NJOY2/app/src/main/res/menu/main.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Anton/AndroidStudioProjects/NJOY4/app/src/main/res/drawable/ic_splash_screen_landscape.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/Anton/AndroidStudioProjects/NJOY4/app/src/main/res/drawable/ic_splash_screen_portrait.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/Anton/AndroidStudioProjects/NJOY4/app/src/main/res/layout-land/activity_main.xml" value="0.17372134038800705" />
+        <entry key="..\:/Users/Anton/AndroidStudioProjects/NJOY4/app/src/main/res/layout-land/activity_splash.xml" value="0.17372134038800705" />
+        <entry key="..\:/Users/Anton/AndroidStudioProjects/NJOY4/app/src/main/res/layout-land/fragment_home.xml" value="0.17372134038800705" />
+        <entry key="..\:/Users/Anton/AndroidStudioProjects/NJOY4/app/src/main/res/layout-land/fragment_map.xml" value="0.17372134038800705" />
+        <entry key="..\:/Users/Anton/AndroidStudioProjects/NJOY4/app/src/main/res/layout-land/fragment_settings.xml" value="0.17372134038800705" />
+        <entry key="..\:/Users/Anton/AndroidStudioProjects/NJOY4/app/src/main/res/layout-land/list_item.xml" value="0.17372134038800705" />
         <entry key="..\:/Users/Anton/AndroidStudioProjects/NJOY4/app/src/main/res/layout/activity_event_list.xml" value="0.21240942028985507" />
         <entry key="..\:/Users/Anton/AndroidStudioProjects/NJOY4/app/src/main/res/layout/activity_main.xml" value="0.21784420289855072" />
         <entry key="..\:/Users/Anton/AndroidStudioProjects/NJOY4/app/src/main/res/layout/activity_splash.xml" value="0.21240942028985507" />
@@ -44,7 +52,8 @@
         <entry key="..\:/Users/Anton/AndroidStudioProjects/NJOY4/app/src/main/res/layout/fragment_home.xml" value="0.21240942028985507" />
         <entry key="..\:/Users/Anton/AndroidStudioProjects/NJOY4/app/src/main/res/layout/fragment_map.xml" value="0.21240942028985507" />
         <entry key="..\:/Users/Anton/AndroidStudioProjects/NJOY4/app/src/main/res/layout/fragment_settings.xml" value="0.21240942028985507" />
-        <entry key="..\:/Users/Anton/AndroidStudioProjects/NJOY4/app/src/main/res/layout/list_item.xml" value="0.21240942028985507" />
+        <entry key="..\:/Users/Anton/AndroidStudioProjects/NJOY4/app/src/main/res/layout/list_item.xml" value="0.33" />
+        <entry key="..\:/Users/Anton/AndroidStudioProjects/NJOY4/app/src/main/res/layout/preferences.xml" value="0.7713815789473685" />
         <entry key="..\:/Users/Anton/AndroidStudioProjects/NJOY4/app/src/main/res/menu/bottom_navigation.xml" value="0.36666666666666664" />
       </map>
     </option>

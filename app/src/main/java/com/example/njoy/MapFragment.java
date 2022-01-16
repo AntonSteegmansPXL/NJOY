@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.IBinder;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,10 +15,12 @@ import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 
+import com.google.android.gms.dynamic.IObjectWrapper;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -34,15 +37,9 @@ public class MapFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        //Initialize view
         View view = inflater.inflate(R.layout.fragment_map, container, false);
-        //return inflater.inflate(R.layout.fragment_map, container, false);
+        SupportMapFragment supportMapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.google_map);
 
-        //Initialize map fragment
-        SupportMapFragment supportMapFragment = (SupportMapFragment)
-                getChildFragmentManager().findFragmentById(R.id.google_map);
-
-        //Async map
         supportMapFragment.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(@NonNull GoogleMap googleMap) {
@@ -50,26 +47,23 @@ public class MapFragment extends Fragment {
                 googleMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
                     @Override
                     public void onMapClick(@NonNull LatLng latLng) {
-                        //when clicked on map
-                        //initialize marker options
-                        MarkerOptions markerOptions = new MarkerOptions();
+
+                        MarkerOptions event1 = new MarkerOptions();
 
                         //Set position of marker
-                        markerOptions.position(latLng);
+                        LatLng locationEvent1 = new LatLng(50.961099405385106, 5.354102512867023);
+                        event1.position(locationEvent1);
 
                         //Set title of marker
-                        markerOptions.title(latLng.latitude + " : " + latLng.longitude);
+                        event1.title("PUKKELPOP");
 
-                        //Remove all markers
-                        googleMap.clear();
+
+
                         
-                        //Animating to zoom the marker
-                        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(
-                                latLng, 10
-                        ));
+                        //googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 10));
 
                         //Add marker on map
-                        googleMap.addMarker(markerOptions);
+                        googleMap.addMarker(event1);
                     }
                 });
             }

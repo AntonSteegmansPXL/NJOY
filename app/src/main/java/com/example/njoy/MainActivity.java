@@ -24,7 +24,6 @@ import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button showeventlistbutton;
     private BottomNavigationView bottomNavigationView;
     private FrameLayout frameLayout;
 
@@ -34,18 +33,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         getSupportActionBar().hide();
-
-        showeventlistbutton = findViewById(R.id.showeventlistbutton);
-        showeventlistbutton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, EventListActivity.class));
-            }
-        });
-
-        bottomNavigationView = findViewById(R.id.bottom_navigation);
-        frameLayout = findViewById(R.id.fragment_container);
         setFragment(new HomeFragment());
 
+        frameLayout = findViewById(R.id.fragment_container);
+
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
     }
@@ -67,8 +59,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                     return true;
                 }
-
-
             };
 
     private void setFragment(Fragment fragment) {
